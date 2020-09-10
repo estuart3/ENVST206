@@ -8,3 +8,8 @@ mean(datW$TMAX[datW$NAME == "Aberdeen, WA US"]), na.rm=TRUE)
 mean(datW$TMAX[datW$NAME == "ABERDEEN, WA US"], na.rm=TRUE)
 sd(datW$TMAX[datW$NAME == "ABERDEEN, WA US"], na.rm=TRUE)
 datW$TAVE <- datW$TMIN + ((datW$TMAX-datW$TMIN)/2)
+#question 2 example vectors
+Num <- c(5.4,32,17.1,-6,29)
+Char <- c("e","f","g","h","I")
+Int <- c(2L,6L,10L,11L,15L)
+Fac <- factor(c("stop", "go"))
