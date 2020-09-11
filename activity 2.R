@@ -28,3 +28,4 @@ pnorm(20, mean(datW$TAVE[datW$siteN == 1],na.rm = TRUE), sd(datW$TAVE[datW$siteN
 - pnorm(20, mean(datW$TAVE[datW$siteN == 1],na.rm = TRUE), sd(datW$TAVE[datW$siteN == 1],na.rm = TRUE))
 1 - pnorm(20, mean(datW$TAVE[datW$siteN == 1],na.rm = TRUE), sd(datW$TAVE[datW$siteN == 1],na.rm = TRUE))
 qnorm(0.95, mean(datW$TAVE[datW$siteN == 1],na.rm = TRUE), sd(datW$TAVE[datW$siteN == 1],na.rm = TRUE))
+hist(datW$PRCP[datW$siteN == 1], freq = FALSE, main = paste(levels(datW$NAME)[1]), xlab = "Daily Precipitation (inches)", ylab = "Relative frequnecy", col = "grey75", border = "white")
