@@ -35,3 +35,10 @@ sum(datW$PRCP, na.rm = TRUE)
 sum(datW$PRCP[datW$siteN == 1], na.rm = TRUE)
 annualPrecip <- aggregate(datW$PRCP, by=list(datW$NAME, datW$year), FUN=sum, na.rm=TRUE)
 colnames(annualPrecip) <- c("Name", "Year", "Precipitation")
+hist(annualPrecip$Precipitation[annualPrecip$Name == "ABERDEEN, WA US"],
+     freq = FALSE,
+     main = paste(levels(datW$NAME)[1]),
+     xlab = "Total Annual Precipitation (cm)",
+     ylab = "Relative Frequency", 
+     col = "grey75",
+     border = "white")
