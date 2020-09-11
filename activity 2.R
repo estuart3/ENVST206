@@ -21,3 +21,4 @@ hist(datW$TAVE[datW$siteN == 1], freq=FALSE, main = paste(levels(datW$NAME)[1]),
 help(hist)
 hist(datW$TAVE[datW$siteN == 4], freq = FALSE, main = paste(levels(datW$NAME)[4]), xlab = "Average daily temperature (degrees C)", ylab = "Relative frequency", col = "grey75", border = "white")
 help(dnorm)
+pnorm(0, mean(datW$TAVE[datW$siteN == 1],na.rm=TRUE), sd(datW$TAVE[datW$siteN == 1],na.rm = TRUE))
