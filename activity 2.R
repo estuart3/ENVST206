@@ -23,3 +23,4 @@ hist(datW$TAVE[datW$siteN == 4], freq = FALSE, main = paste(levels(datW$NAME)[4]
 help(dnorm)
 pnorm(0, mean(datW$TAVE[datW$siteN == 1],na.rm=TRUE), sd(datW$TAVE[datW$siteN == 1],na.rm = TRUE))
 pnorm(5, mean(datW$TAVE[datW$siteN == 1],na.rm = TRUE), sd(datW$TAVE[datW$siteN == 1],na.rm = TRUE))
+pnorm(5, mean(datW$TAVE[datW$siteN == 1],na.rm = TRUE), sd(datW$TAVE[datW$siteN == 1],na.rm = TRUE)) - pnorm(0, mean(datW$TAVE[datW$siteN == 1],na.rm = TRUE), sd(datW$TAVE[datW$siteN == 1],na.rm = TRUE))
