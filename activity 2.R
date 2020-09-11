@@ -42,3 +42,10 @@ hist(annualPrecip$Precipitation[annualPrecip$Name == "ABERDEEN, WA US"],
      ylab = "Relative Frequency", 
      col = "grey75",
      border = "white")
+hist(annualPrecip$Precipitation[annualPrecip$Name == "MANDAN EXPERIMENT STATION, ND US"], 
+     freq = FALSE,
+     main = paste(levels(datW$NAME)[3]),
+     xlab = "Total Annual Precipitation (cm)",
+     ylab = "Relative Frequency",
+     col = "grey75",
+     border = "white")
