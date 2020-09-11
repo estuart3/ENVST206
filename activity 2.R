@@ -49,3 +49,5 @@ hist(annualPrecip$Precipitation[annualPrecip$Name == "MANDAN EXPERIMENT STATION,
      ylab = "Relative Frequency",
      col = "grey75",
      border = "white")
+pnorm(700, mean(annualPrecip$Precipitation[annualPrecip$Name == "ABERDEEN, WA US"],na.rm = TRUE), sd(annualPrecip$Precipitation[annualPrecip$Name == "ABERDEEN, WA US"],na.rm = TRUE))
+pnorm(700, mean(annualPrecip$Precipitation[annualPrecip$Name == "MANDAN EXPERIMENT STATION, ND US"],na.rm = TRUE), sd(annualPrecip$Precipitation[annualPrecip$Name == "MANDAN EXPERIMENT STATION, ND US"],na.rm = TRUE))
