@@ -5,3 +5,4 @@ plot(ch4$CH4_Flux ~ ch4$herbivory, xlab = "Treatment",
      ylab = "CH4 fluxes (mgC m -2 day-1)")
 #Shapiro-Wilkes Test
 shapiro.test(ch4$CH4_Flux[ch4$herbivory == "Ctl"])
+shapiro.test(ch4$CH4_Flux[ch4$herbivory == "Ex"])
