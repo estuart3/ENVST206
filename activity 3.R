@@ -11,3 +11,7 @@ t.test(ch4$CH4_Flux ~ ch4$herbivory)
 #insect data
 datI <- read.csv("/Users/emmastuart/Documents/a03/insect_richness.csv")
 datI$urbanName <- as.factor(datI$urbanName)
+shapiro.test(datI$Richness[datI$urbanName == "Suburban"])
+shapiro.test(datI$Richness[datI$urbanName == "Developed"])
+shapiro.test(datI$Richness[datI$urbanName == "Dense"])
+shapiro.test(datI$Richness[datI$urbanName == "Natural"])
