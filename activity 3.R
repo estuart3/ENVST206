@@ -6,3 +6,4 @@ plot(ch4$CH4_Flux ~ ch4$herbivory, xlab = "Treatment",
 #Shapiro-Wilkes Test
 shapiro.test(ch4$CH4_Flux[ch4$herbivory == "Ctl"])
 shapiro.test(ch4$CH4_Flux[ch4$herbivory == "Ex"])
+bartlett.test(ch4$CH4_Flux ~ ch4$herbivory)
