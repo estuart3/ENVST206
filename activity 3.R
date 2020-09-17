@@ -19,3 +19,5 @@ bartlett.test(datI$Richness ~ datI$urbanName)
 in.mod <- lm(datI$Richness ~ datI$urbanName)
 in.aov <- aov(in.mod)
 summary(in.aov)
+tukeyT <- TukeyHSD(in.aov)
+tukeyT
