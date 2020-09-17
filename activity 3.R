@@ -21,3 +21,4 @@ in.aov <- aov(in.mod)
 summary(in.aov)
 tukeyT <- TukeyHSD(in.aov)
 tukeyT
+plot(tukeyT, cex.axis=0.75)
