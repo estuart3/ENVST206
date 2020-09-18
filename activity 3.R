@@ -22,3 +22,4 @@ summary(in.aov)
 tukeyT <- TukeyHSD(in.aov)
 tukeyT
 plot(tukeyT, cex.axis=0.75)
+tapply(datI$Richness, datI$urbanName, "mean")
