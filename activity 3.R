@@ -27,3 +27,5 @@ tapply(datI$Richness, datI$urbanName, "mean")
 species <- matrix(c(18,8,15,32), ncol = 2, byrow = TRUE)
 colnames(species) <- c("Not protected", "Protected")
 rownames(species) <- c("Declining", "Stable/Increase")
+mosaicplot(species, xlab = "population statuas", ylab = "legal protection",
+           main = "Legal protection impacts on populations")
