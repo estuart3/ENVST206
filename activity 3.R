@@ -23,3 +23,7 @@ tukeyT <- TukeyHSD(in.aov)
 tukeyT
 plot(tukeyT, cex.axis=0.75)
 tapply(datI$Richness, datI$urbanName, "mean")
+#chi squared
+species <- matrix(c(18,8,15,32), ncol = 2, byrow = TRUE)
+colnames(species) <- c("Not protected", "Protected")
+rownames(species) <- c("Declining", "Stable/Increase")
