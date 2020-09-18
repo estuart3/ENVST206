@@ -29,3 +29,4 @@ colnames(species) <- c("Not protected", "Protected")
 rownames(species) <- c("Declining", "Stable/Increase")
 mosaicplot(species, xlab = "population statuas", ylab = "legal protection",
            main = "Legal protection impacts on populations")
+chisq.test(species)
