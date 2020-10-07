@@ -14,3 +14,9 @@ qqnorm(dam.res)
 #add qq line
 qqline(dam.res)
 shapiro.test(dam.res)
+#make residual plot
+plot(datB$dams.n, dam.res,
+     xlab = "beaver dams",
+     ylab = "standardized residual")
+#add a horizontal line at zero
+abline(h=0)
