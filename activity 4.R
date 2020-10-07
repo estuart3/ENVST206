@@ -13,3 +13,4 @@ dam.res <- rstandard(dam.mod)
 qqnorm(dam.res)
 #add qq line
 qqline(dam.res)
+shapiro.test(dam.res)
