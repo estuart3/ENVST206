@@ -44,3 +44,28 @@ plot(pheno$Prcp, pheno$doy,
      col = "royalblue4",
      ylab = "Day of leaf out",
      xlab = "Precipitation (mm)")
+plot(pheno$Tmax, pheno$doy,
+     pch = 19,
+     col = "royalblue4",
+     ylab = "Day of leaf out",
+     xlab = "Maximum temperature (C)")
+plot(pheno$Tmax, pheno$doy,
+     pch = 19,
+     col = "royalblue4",
+     ylab = "Day of leaf out",
+     xlab = "Maximum temperature (C)")
+plot(pheno$Lat, pheno$doy,
+     pch = 19,
+     col = "royalblue4",
+     ylab = "Day of leaf out",
+     xlab = "Latitude")
+plot(pheno$elev, pheno$doy,
+     pch = 19,
+     col = "royalblue4",
+     ylab = "Day of leaf out",
+     xlab = "Elevation (m)")
+plot(pheno$siteDesc, pheno$doy,
+     pch = 19,
+     col = "royalblue4",
+     ylab = "Day of leaf out",
+     xlab = "Site type (urban or rural)")
