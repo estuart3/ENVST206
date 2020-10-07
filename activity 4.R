@@ -73,3 +73,11 @@ plot( ~ pheno$Lat + pheno$Tmax + pheno$Tmin + pheno$Prcp + pheno$elev + pheno$si
 pheno$urID <- ifelse(pheno$siteDesc == "Urban", 1, 0)
 mlr <- lm(pheno$doy ~ pheno$Tmax + pheno$Prcp + pheno$elev + pheno$urID)
 mlfitted <- fitted(mlr)
+pheno.res <- rstandard(mlr)
+qqnorm(pheno.res)
+qqline(pheno.res)
+shapiro.test(pheno.res)
+plot(mlfitted, pheno.res,
+     xlab = "fitted values",
+     ylab = "standarad residuals")
+abline(h=0)
