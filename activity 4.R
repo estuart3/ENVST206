@@ -71,3 +71,5 @@ plot(pheno$siteDesc, pheno$doy,
      xlab = "Site type (urban or rural)")
 plot( ~ pheno$Lat + pheno$Tmax + pheno$Tmin + pheno$Prcp + pheno$elev + pheno$siteDesc)
 pheno$urID <- ifelse(pheno$siteDesc == "Urban", 1, 0)
+mlr <- lm(pheno$doy ~ pheno$Tmax + pheno$Prcp + pheno$elev + pheno$urID)
+mlfitted <- fitted(mlr)
