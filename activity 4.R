@@ -7,3 +7,5 @@ plot(datB$dams.n, datB$area.ha, pch = 19,
      xlab = "Number of beaver dams")
 #set up regression
 dam.mod <- lm(datB$area.ha ~ datB$dams.n)
+#get standardized residuals
+dam.res <- rstandard(dam.mod)
