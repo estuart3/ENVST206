@@ -5,3 +5,5 @@ plot(datB$dams.n, datB$area.ha, pch = 19,
      col = "royalblue4", 
      ylab = "Surface water area (ha)",
      xlab = "Number of beaver dams")
+#set up regression
+dam.mod <- lm(datB$area.ha ~ datB$dams.n)
