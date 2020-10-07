@@ -30,3 +30,5 @@ plot(datB$dams.n, datB$area.ha,
 #add regression line
 #make line width thicker
 abline(dam.mod, lwd=2)
+#read in red maple data
+pheno <- read.csv("/Users/emmastuart/Documents/a04/red_maple_pheno.csv")
