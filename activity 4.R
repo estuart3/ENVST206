@@ -69,3 +69,4 @@ plot(pheno$siteDesc, pheno$doy,
      col = "royalblue4",
      ylab = "Day of leaf out",
      xlab = "Site type (urban or rural)")
+plot( ~ pheno$Lat + pheno$Tmax + pheno$Tmin + pheno$Prcp + pheno$elev + pheno$siteDesc)
