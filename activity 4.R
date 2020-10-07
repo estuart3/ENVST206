@@ -20,3 +20,4 @@ plot(datB$dams.n, dam.res,
      ylab = "standardized residual")
 #add a horizontal line at zero
 abline(h=0)
+summary(dam.mod)
