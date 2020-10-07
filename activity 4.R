@@ -21,3 +21,12 @@ plot(datB$dams.n, dam.res,
 #add a horizontal line at zero
 abline(h=0)
 summary(dam.mod)
+#make plot of beaver dams and surface water
+plot(datB$dams.n, datB$area.ha,
+     pch = 19,
+     col = "royalblue4",
+     ylab = "Surface water area (ha)",
+     xlab = "Number of beaver dams")
+#add regression line
+#make line width thicker
+abline(dam.mod, lwd=2)
