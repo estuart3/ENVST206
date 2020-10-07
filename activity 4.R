@@ -32,3 +32,15 @@ plot(datB$dams.n, datB$area.ha,
 abline(dam.mod, lwd=2)
 #read in red maple data
 pheno <- read.csv("/Users/emmastuart/Documents/a04/red_maple_pheno.csv")
+#set up panel of plots with one row and two columns
+par(mfrow=c(1,2))
+plot(pheno$Tmax, pheno$doy,
+     pch = 19,
+     col = "royalblue4",
+     ylab = "Day of leaf out",
+     xlab = "Maximum temperature (C)")
+plot(pheno$Prcp, pheno$doy,
+     pch = 19,
+     col = "royalblue4",
+     ylab = "Day of leaf out",
+     xlab = "Precipitation (mm)")
