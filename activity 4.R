@@ -81,3 +81,4 @@ plot(mlfitted, pheno.res,
      xlab = "fitted values",
      ylab = "standarad residuals")
 abline(h=0)
+summary(mlr)
