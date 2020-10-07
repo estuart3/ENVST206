@@ -9,3 +9,7 @@ plot(datB$dams.n, datB$area.ha, pch = 19,
 dam.mod <- lm(datB$area.ha ~ datB$dams.n)
 #get standardized residuals
 dam.res <- rstandard(dam.mod)
+#set up qq plot
+qqnorm(dam.res)
+#add qq line
+qqline(dam.res)
