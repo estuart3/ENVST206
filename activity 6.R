@@ -41,3 +41,6 @@ gAll <- full_join(gdf66, gdf15, by = "GLACNAME")
 #calculate the percent change in area from 1966 to 2015
 gAll$gdiff <- ((gAll$area66-gAll$area15)/gAll$area66)*100
 plot(gAll$area66, gAll$gdiff)
+#join data with spatial data table and overwrite into spatial data table
+g1966@data <- left_join(g1966@data, gAll, by = "GLACNAME")
+spplot(g1966, "gdiff", main = "% change in area", col = "transparent")
