@@ -16,3 +16,7 @@ plot(g1966, col = "lightblue2", border = "grey50")
 #data stores all accompanying info/measurements for each spatial object
 head(g2015@data)
 g1966@proj4string
+help("proj4string")
+#check glacier names
+g1966@data$GLACNAME
+g2015@data$GLACNAME
