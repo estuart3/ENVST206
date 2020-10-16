@@ -15,3 +15,4 @@ str(g2015)
 plot(g1966, col = "lightblue2", border = "grey50")
 #data stores all accompanying info/measurements for each spatial object
 head(g2015@data)
+g1966@proj4string
