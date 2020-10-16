@@ -8,3 +8,5 @@ library(dplyr)
 #read in shapefiles
 #glaciers in 1966
 g1966 <- readOGR("/Users/emmastuart/Documents/a06/GNPglaciers/GNPglaciers_1966.shp")
+#glaciers in 2015
+g2015 <- readOGR("/Users/emmastuart/Documents/a06/GNPglaciers/GNPglaciers_2015.shp")
