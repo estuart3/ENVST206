@@ -20,3 +20,9 @@ help("proj4string")
 #check glacier names
 g1966@data$GLACNAME
 g2015@data$GLACNAME
+#fix glacier name to be consistent with entire time period
+g2015@data$GLACNAME <- ifelse(g2015@data$GLACNAME == "North Swiftcurrent Glacier", 
+                              "N. Swiftcurrent Glacier", 
+                              ifelse(g2015@data$GLACNAME == "Miche Wabun", 
+                                     "Miche Wabun Glacier",
+                                     as.character(g2015@data$GLACNAME)))
