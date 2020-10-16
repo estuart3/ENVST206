@@ -47,3 +47,5 @@ spplot(g1966, "gdiff", main = "% change in area", col = "transparent")
 #look at the Vulture glacier in 1966
 vulture66 <- g1966[g1966@data$GLACNAME == "Vulture Glacier",]
 plot(vulture66, main = "Vulture Glacier in 1966", col = "slategrey")
+mean(gAll$gdiff, na.rm = TRUE)
+sd(gAll$gdiff, na.rm = TRUE)
