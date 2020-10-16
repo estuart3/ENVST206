@@ -10,3 +10,6 @@ library(dplyr)
 g1966 <- readOGR("/Users/emmastuart/Documents/a06/GNPglaciers/GNPglaciers_1966.shp")
 #glaciers in 2015
 g2015 <- readOGR("/Users/emmastuart/Documents/a06/GNPglaciers/GNPglaciers_2015.shp")
+str(g2015)
+#map the glaciers
+plot(g1966, col = "lightblue2", border = "grey50")
