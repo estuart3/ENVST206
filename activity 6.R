@@ -13,3 +13,5 @@ g2015 <- readOGR("/Users/emmastuart/Documents/a06/GNPglaciers/GNPglaciers_2015.s
 str(g2015)
 #map the glaciers
 plot(g1966, col = "lightblue2", border = "grey50")
+#data stores all accompanying info/measurements for each spatial object
+head(g2015@data)
