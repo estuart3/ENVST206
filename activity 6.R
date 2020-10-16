@@ -44,3 +44,6 @@ plot(gAll$area66, gAll$gdiff)
 #join data with spatial data table and overwrite into spatial data table
 g1966@data <- left_join(g1966@data, gAll, by = "GLACNAME")
 spplot(g1966, "gdiff", main = "% change in area", col = "transparent")
+#look at the Vulture glacier in 1966
+vulture66 <- g1966[g1966@data$GLACNAME == "Vulture Glacier",]
+plot(vulture66, main = "Vulture Glacier in 1966", col = "slategrey")
