@@ -54,3 +54,8 @@ boulder15 <- g2015[g2015@data$GLACNAME == "Boulder Glacier",]
 plot(boulder66, main = "Change in area of Boulder Glacier", col = "green4")
 plot(boulder15, col = "blue", add = TRUE)
 legend("bottomleft", c("boulder66", "boulder15"), fill = c("green4", "blue"), bty = "n")
+pumpelly66 <- g1966[g1966@data$GLACNAME == "Pumpelly Glacier",]
+pumpelly15 <- g2015[g2015@data$GLACNAME == "Pumpelly Glacier",]
+plot(pumpelly66, main = "Change in area of Pumpelly Glacier", col = "green4")
+plot(pumpelly15, col = "blue", add = TRUE)
+legend("bottomright", c("pumpelly66", "pumpelly15"), fill = c("green4", "blue"), bty = "n")
