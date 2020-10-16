@@ -49,3 +49,8 @@ vulture66 <- g1966[g1966@data$GLACNAME == "Vulture Glacier",]
 plot(vulture66, main = "Vulture Glacier in 1966", col = "slategrey")
 mean(gAll$gdiff, na.rm = TRUE)
 sd(gAll$gdiff, na.rm = TRUE)
+boulder66 <- g1966[g1966@data$GLACNAME == "Boulder Glacier",]
+boulder15 <- g2015[g2015@data$GLACNAME == "Boulder Glacier",]
+plot(boulder66, col = "green4")
+plot(boulder15, col = "blue", add = TRUE)
+legend("bottomleft", c("boulder66", "boulder15"), fill = c("green4", "blue"), bty = "n")
