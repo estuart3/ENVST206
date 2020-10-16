@@ -38,3 +38,5 @@ library(rgdal)
 library(sp)
 library(rgdal)
 gAll <- full_join(gdf66, gdf15, by = "GLACNAME")
+#calculate the percent change in area from 1966 to 2015
+gAll$gdiff <- ((gAll$area66-gAll$area15)/gAll$area66)*100
