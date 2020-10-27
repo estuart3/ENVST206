@@ -25,3 +25,8 @@ sd(utica_tavg$tavg2[utica_tavg$year == "2002"], na.rm = TRUE)
 sd(utica_tavg$tavg2[utica_tavg$year == "2003"], na.rm = TRUE)
 sd(utica_tavg$tavg2[utica_tavg$year == "2004"], na.rm = TRUE)
 sd(utica_tavg$tavg2[utica_tavg$year == "2005"], na.rm = TRUE)
+plot(averagetemp$YEAR, averagetemp$MAAT,
+     pch = 19,
+     col = "royalblue4",
+     ylab = "Average annual temperature",
+     xlab = "Year")
