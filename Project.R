@@ -19,3 +19,8 @@ syracuse_tavg$Tavg <- as.numeric(syracuse_tavg$Tavg)
 averagetemp_S <- aggregate(syracuse_tavg$Tavg, by = list(syracuse_tavg$Year), 
                            FUN = "mean", na.rm = TRUE)
 colnames(averagetemp_S) <- c("Year", "MAAT")
+plot(averagetemp_S$Year, averagetemp_S$MAAT, 
+     pch=19,
+     col="royalblue4", 
+     ylab = "Average annual temperature", 
+     xlab = "Year")
