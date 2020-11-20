@@ -29,3 +29,9 @@ albany_tavg$Year <- as.factor(albany_tavg$Year)
 albany_tavg$Tavg <- as.numeric(albany_tavg$Tavg)
 averagetemp_A <- aggregate(albany_tavg$Tavg, by = list(albany_tavg$Year), 
                            FUN = "mean", na.rm = TRUE)
+colnames(averagetemp_A) <- c("Year", "MAAT")
+plot(averagetemp_A$Year, averagetemp_A$MAAT, 
+     pch = 19, 
+     col = "royalblue4", 
+     ylab = "Average annual temperature", 
+     xlab = "Year")
