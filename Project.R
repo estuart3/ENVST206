@@ -14,3 +14,8 @@ plot(averagetemp_U$Year, averagetemp_U$MAAT,
      ylab = "Average annual temperature", 
      xlab = "Year")
 syracuse_tavg <- read.csv("/Users/emmastuart/Documents/Syracuse_tavg.csv")
+syracuse_tavg$Year <- as.factor(syracuse_tavg$Year)
+syracuse_tavg$Tavg <- as.numeric(syracuse_tavg$Tavg)
+averagetemp_S <- aggregate(syracuse_tavg$Tavg, by = list(syracuse_tavg$Year), 
+                           FUN = "mean", na.rm = TRUE)
+colnames(averagetemp_S) <- c("Year", "MAAT")
