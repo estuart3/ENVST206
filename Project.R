@@ -24,3 +24,6 @@ plot(averagetemp_S$Year, averagetemp_S$MAAT,
      col="royalblue4", 
      ylab = "Average annual temperature", 
      xlab = "Year")
+albany_tavg <- read.csv("/Users/emmastuart/Documents/Albany_tavg.csv")
+albany_tavg$Year <- as.factor(albany_tavg$Year)
+albany_tavg$Tavg <- as.numeric(albany_tavg$Tavg)
