@@ -83,3 +83,5 @@ bartlett.test(temp_change$TempChange ~ temp_change$Location)
 temp_change.mod <- lm(temp_change$TempChange ~ temp_change$Location)
 temp_change.aov <- aov(temp_change.mod)
 summary(temp_change.aov)
+tukeyT <- TukeyHSD(temp_change.aov)
+tukeyT
