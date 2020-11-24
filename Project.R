@@ -1,5 +1,5 @@
 utica_tavg <- read.csv("/Users/emmastuart/Documents/Utica_tavg.csv")
-utica_tavg$Year <- as.factor(utica_tavg$Year)
+utica_tavg$Year <- as.numeric(utica_tavg$Year)
 utica_tavg$Tavg <- as.numeric(utica_tavg$Tavg)
 averagetemp_U <- aggregate(utica_tavg$Tavg, by = list(utica_tavg$Year), FUN = "mean", na.rm = TRUE)
 colnames(averagetemp_U) <- c("Year", "MAAT")
@@ -34,4 +34,15 @@ plot(averagetemp_A$Year, averagetemp_A$MAAT,
      pch = 19, 
      col = "royalblue4", 
      ylab = "Average annual temperature", 
-     xlab = "Year")
+     xlab = "Year",
+     main = "Albany")
+help(plot)
+averagetemp_U.mod <- lm(averagetemp_U$Year ~ averagetemp_U$MAAT)
+averagetemp_U$Year <- as.numeric(averagetemp_U$Year)
+averagetemp_U$MAAT <- as.numeric(averagetemp_U$MAAT)
+averagetemp_S.mod <- lm(averagetemp_S$Year ~ averagetemp_S$MAAT)
+averagetemp_S$Year <- as.numeric(averagetemp_S$Year)
+averagetemp_S$MAAT <- as.numeric(averagetemp_S$MAAT)
+averagetemp_A.mod <- lm(averagetemp_A$Year ~ averagetemp_A$MAAT)
+averagetemp_A$Year <- as.numeric(averagetemp_A$Year)
+averagetemp_A$MAAT <- as.numeric(averagetemp_A$MAAT)
