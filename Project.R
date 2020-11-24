@@ -70,3 +70,6 @@ plot(averagetemp_A$MAAT, averagetemp_A.res,
      xlab = "Mean average air temperature", 
      ylab = "standardized residuals")
 abline(h=0)
+summary(averagetemp_U.mod)
+summary(averagetemp_S.mod)
+summary(averagetemp_A.mod)
