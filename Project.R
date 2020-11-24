@@ -85,3 +85,5 @@ temp_change.aov <- aov(temp_change.mod)
 summary(temp_change.aov)
 tukeyT <- TukeyHSD(temp_change.aov)
 tukeyT
+plot(temp_change$TempChange ~ temp_change$Location,
+     xlab = "City", ylab = "Change in temperature per year")
