@@ -58,3 +58,15 @@ qqline(averagetemp_A.res)
 shapiro.test(averagetemp_U.res)
 shapiro.test(averagetemp_S.res)
 shapiro.test(averagetemp_A.res)
+plot(averagetemp_U$MAAT, averagetemp_U.res, 
+     xlab = "Mean average air temperature", 
+     ylab = "standardized residuals")
+abline(h=0)
+plot(averagetemp_S$MAAT, averagetemp_S.res, 
+     xlab = "Mean average air temperature", 
+     ylab = "standardized residuals")
+abline(h=0)
+plot(averagetemp_A$MAAT, averagetemp_A.res, 
+     xlab = "Mean average air temperature", 
+     ylab = "standardized residuals")
+abline(h=0)
